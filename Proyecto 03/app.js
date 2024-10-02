@@ -1,5 +1,4 @@
 
-let coche;
 const MAX = 135;
 const LIMITE = 60;
 
