@@ -13,7 +13,9 @@
             <button class="search-button">Search</button>
         </form>
         <div class="result">
-            
+            <h2 class="title-result">${data.word}</h2>
+            <p class="part-of-speech">antonyms: ${data.meanings[2]?.antonyms}</p>
+            <p class="definition">${data.meanings[0].definitions[0].definition}</p>
         </div>
     </div>
 
