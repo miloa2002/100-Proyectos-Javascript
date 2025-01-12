@@ -1,0 +1,190 @@
+:root {
+    --DesaturatedDarkCyan: hsl(180, 29%, 50%);
+    --LightGrayishCyan: hsl(180, 52%, 96%); 
+    --LightGrayishCyan: hsl(180, 31%, 95%);
+    --DarkGrayishCyan: hsl(180, 8%, 52%); 
+    --VeryDarkGrayishCyan: hsl(180, 14%, 20%);
+    --white: #fff;
+}
+
+* {
+    margin: 0;
+    pad: 0;
+    box-sizing: border-box;
+}
+
+html {
+    font-size: 62.5%;
+}
+
+body {
+    font-size: 1.6rem;
+    font-family: "League Spartan", serif;
+    background-color: var(--LightGrayishCyan);
+}
+
+header {
+    width: 100%;
+    height: 20rem;
+}
+
+.header-bg {
+    width: 100%;
+    height: 20rem;
+    background-image: url(../images/bg-header-desktop.svg);
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center;
+    background-color: hsl(180, 29%, 50%);
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    position: relative;
+}
+
+.all-filter {
+    background-color: var(--white);
+    max-width: 120rem;
+    width: 90%;
+    height: 8rem;
+    box-shadow: -1px 2px 9px 0px rgba(0,0,0,0.24);
+    border-radius: 5px;
+    position: absolute;
+    top: 80%;
+    display: flex;
+    align-items: center;
+    padding: 0 5rem;
+}
+
+.all-filter-clear-container {
+    display: flex;
+    width: 100%;
+    justify-content: right;
+}
+
+.all-filter-content {
+    display: flex;
+    width: 100%;
+    gap: 1rem;
+}
+
+.read-filter {
+    display: flex;
+    align-items: center;
+    font-weight: bold;
+}
+
+.read-filter p {
+    background-color: var(--LightGrayishCyan);
+    color: var(--DesaturatedDarkCyan);
+    padding: 1rem;
+    border: 5px;
+}
+
+.read-filter span {
+    background-color: var(--DesaturatedDarkCyan);
+    padding: 1rem;
+    border: 5px;
+    color: var(--white);
+    cursor: pointer;
+    transition: background-color 0.5s ease-in-out;
+}
+
+.read-filter span:hover {
+    background-color: var(--VeryDarkGrayishCyan);
+}
+
+
+.all-filter-clear {
+    color: var(--DesaturatedDarkCyan);
+    text-decoration: underline;
+    font-weight: bold;
+    cursor: pointer;
+}
+
+.container {
+    max-width: 120rem;
+    width: 90%;
+    margin: 0 auto;
+}
+
+.cards {
+    margin-top: 10rem;
+}
+
+.one-card {
+    width: 100%;
+    border-radius: 5px;
+    height: auto;
+    box-shadow: -1px 2px 9px 0px rgba(0,0,0,0.24);
+    background-color: var(--white);
+    padding: 4rem;
+    margin-bottom: 2rem;
+}
+
+.one-children-info {
+    display: flex;
+    flex-direction: column;
+    gap: 1.5rem;
+}
+
+.one-card-flex, .one-children-image-info, .two-children, .one-children-info div {
+    display: flex;
+    align-items: center;
+    gap: 2rem;
+}
+
+.one-children-info div h4 {
+    font-weight: bold;
+    font-size: 2rem;
+}
+
+.one-card-flex, .two-children {
+    justify-content: space-between;
+}
+
+.one-children-info-1 {
+    font-weight: bold;
+}
+
+.one-children-info-1 p:nth-child(1) {
+    color: var(--DesaturatedDarkCyan);
+}
+
+.one-children-info-1 p:nth-child(2) {
+    background-color: var(--DesaturatedDarkCyan);
+    color: white;
+    padding: 8px 12px;
+    border-radius: 100px;
+}
+
+.one-children-info-1 p:nth-child(3) {
+    background-color: var(--VeryDarkGrayishCyan);
+    color: white;
+    padding: 8px 18px;
+    border-radius: 100px;
+}
+
+.one-children-info-2 {
+    color: var(--VeryDarkGrayishCyan);
+}
+
+.one-children-info-3 {
+    color: var(--DarkGrayishCyan);
+    font-weight: bold;
+}
+
+.two-children-tecnologies {
+    color: var(--DesaturatedDarkCyan);
+    font-weight: bold;
+    background-color: var(--LightGrayishCyan);
+    padding: 1rem;
+    border-radius: 5px;
+    transition: background-color 0.5s ease-in-out;
+}
+
+.two-children-tecnologies:hover {
+    background-color: var(--DesaturatedDarkCyan);
+    color: var(--white);
+    cursor: pointer;
+}
